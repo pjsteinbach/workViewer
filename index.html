@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de convenio</title>
+    <link rel="icon" href="asset/ico/arroyo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <h1>VISUALIZADOR DE CONVENIOS VIGENTES</h1>
+    <div class="grid-container">
+        <section class="form-section">
+            <div class="tittle-container"><h3>FILTRO</h3></div>
+            <div class="label-input-container">
+                <label for="type">TIPO:</label>
+                <select id="type-select" name="type" required>
+                    <option value="" disabled selected>Seleccione una filtro</option>
+                    <option value="cuenca">Cuenca</option>
+                    <option value="municipio">Municipio</option>
+                    <option value="entidad">Entidad</option>
+                    <option value="movimientoSocial">Agrupación</option>
+                    <option value="supervisorTerritorial">Supervisor territorial</option>
+                    <option value="responsableCarga">Responsable de reporte</option>
+                </select>
+            </div>
+            <div class="label-input-container">
+                <label for="item">ITEM:</label>
+                <select  id="item-select" name="item" required>
+                    <option value="" disabled selected>Seleccione un criterio</option>
+                </select>
+            </div>        
+            <div id="autocomplete-container"></div>
+        </section>
+        
+        <section class="data-section">
+            <div class="tittle-container"><h3>DATOS DE CONVENIO</h3></div>
+            <div class="label-input-container">
+                <label for="water-basin">CUENCA:</label>
+                <input type="text" name="water-basin" id="data-water-basin">
+            </div>
+            <div class="label-input-container">
+                <label for="entity">ENTIDAD:</label>
+                <input type="text" name="entity" id="data-entity">
+            </div>
+            <div class="label-input-container">
+                <label for="exp">EXPEDIENTE:</label>
+                <input type="text" name="exp" id="data-exp">
+            </div>
+            <div class="label-input-container">
+                <label for="reso">RESOLUCIÓN:</label>
+                <input type="text" name="reso" id="data-reso">
+            </div>
+            <div class="label-input-container">
+                <label for="municipality">MUNICIPIO:</label>
+                <input type="text" name="municipality" id="data-municipality">
+            </div>
+            <div class="label-input-container">
+                <label for="social-movement">AGRUPACIÓN:</label>
+                <input type="text" name="social-movement" id="data-social-movement">
+            </div>
+            <div class="label-input-container">
+                <label for="workers">TRABAJADORES:</label>
+                <input type="text" name="workers" id="data-workers">
+            </div>
+            <div class="label-input-container">
+                <label for="meters">METROS:</label>
+                <input type="text" name="meters" id="data-meters">
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="tittle-container"><h3>MAPA DE OBRA</h3></div>
+            <div class="iframe-container">
+                <iframe id="iframe-map" src="" frameborder="0"></iframe>
+            </div>
+            <a id="download-container" href="" target="_blank">
+                <span class="material-symbols-outlined">open_in_new</span>
+                <p>Ficha de cauce</p>
+            </a>
+        </section>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&loading=async&callback=initMap&v=weekly"></script>
+    <script src="code.js"></script>
+</body>
+</html>
