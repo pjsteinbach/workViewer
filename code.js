@@ -1485,7 +1485,7 @@ const obras = [
 		responsableCarga: 'Iván Orellana',
 		trabajadores: '25',
 		metros: '4800',
-		hrefMap: 'https://www.google.com/maps/d/u/0/embed?mid=1W6t6Pr5qXlAWlI9e9Y67ESq72Qvu3nY&ehbc=2E312F&noprof=1',
+		hrefMap: 'https://www.google.com/maps/d/embed?mid=14qM7xPLml1apEIuqjVby_qNaE-zoiYk&ehbc=2E312F&noprof=1',
 		fichaCauce: 'https://drive.google.com/file/d/1zk1EN6mD3kHNwUU-KdWTEjfZHedQ1tkc/view?usp=drive_link',
 	},	
 		
